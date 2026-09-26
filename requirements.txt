@@ -1,0 +1,38 @@
+# Core deep-learning stack (install the CUDA build of torch that matches your driver)
+torch==2.8.0
+torchaudio==2.8.0
+
+# Speech analysis
+pyannote.audio==4.0.2
+faster-whisper==1.2.1
+transformers==4.48.3
+silero-vad==6.2.0
+
+# Translation
+openai==2.8.1
+python-dotenv==1.2.1
+
+# Uzbek TTS (F5-TTS style DiT + Vocos)
+vocos==0.1.0
+x-transformers==2.11.23
+torchdiffeq==0.2.5
+einops==0.8.1
+safetensors==0.5.2
+huggingface-hub==0.28.1
+jieba==0.42.1
+pypinyin==0.55.0
+inflect==7.5.0
+roman==5.2
+Unidecode==1.4.0
+PyYAML==6.0.2
+matplotlib==3.10.0
+tqdm==4.67.1
+
+# Audio / video processing
+demucs==4.0.1
+librosa==0.11.0
+soundfile==0.13.1
+numpy==2.2.2
+pydub==0.25.1
+pyrubberband==0.4.0
+moviepy==1.0.3

@@ -1,0 +1,20 @@
+# Uzbek voice-cloning TTS configuration.
+# Relative paths are resolved from the project root.
+
+ckpt_file: models/uvc/model_last.pt
+vocab_file: models/uvc/vocab.txt
+
+# Seconds of cross-fade between generated chunks.
+cross_fade_duration: 0.15
+
+# Reference voice per detected gender. `ref_text` must be the exact
+# transcript of `ref_audio` (lower-case Uzbek Latin works best).
+voices:
+  male:
+    ref_audio: assets/voices/ref_speaker.mp3
+    ref_text: "va biz shetga qo'shilib kelib kelib ustozlar bilan tanishib mashetda o'qib mashetda tragedingni boshladik ertalab yettida maytabga ketaman maytabdan shu bir yarim ikkilarda qaytib ."
+    speed: 0.80
+  female:
+    ref_audio: assets/voices/6.wav
+    ref_text: "bundan tashqari terrorchilar uylarga zanjirli riaksiya bo'yicha po'rtlaydigan mini qopqonlar o'rnatmoqda ."
+    speed: 0.70

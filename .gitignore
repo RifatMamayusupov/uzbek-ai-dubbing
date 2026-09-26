@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+env/
+venv/
+.venv/
+
+# Large / local-only assets
+models/**/*.pt
+models/**/*.safetensors
+assets/voices/*
+!assets/voices/README.md
+examples/*
+!examples/README.md
+
+# Generated
+outputs/
+_archive/
+*.wav
+*.mp3
+*.mp4
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
